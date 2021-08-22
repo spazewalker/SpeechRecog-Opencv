@@ -1,0 +1,988 @@
+Starting build at Mon Jul 26 19:48:25 IST 2021
+------------------------------------------
+-- Detected processor: x86_64
+-- Could NOT find PythonInterp (missing: PYTHON_EXECUTABLE) (Required is at least version "2.7")
+-- Looking for ccache - not found
+-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found suitable version "1.2.11", minimum required is "1.2.3") 
+-- Could NOT find JPEG (missing: JPEG_LIBRARY JPEG_INCLUDE_DIR) 
+-- libjpeg-turbo: VERSION = 2.1.0, BUILD = opencv-4.5.3-pre-libjpeg-turbo-debug
+-- Could NOT find TIFF (missing: TIFF_LIBRARY TIFF_INCLUDE_DIR) 
+-- Could NOT find OpenJPEG (minimal suitable version: 2.0, recommended version >= 2.3.1). OpenJPEG will be built from sources
+-- OpenJPEG: VERSION = 2.4.0, BUILD = opencv-4.5.3-pre-openjp2-2.4.0-debug
+-- OpenJPEG libraries will be built from sources: libopenjp2 (version "2.4.0")
+-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+-- Could NOT find PNG (missing: PNG_LIBRARY PNG_PNG_INCLUDE_DIR) 
+-- libva: missing va.h header (VA_INCLUDE_DIR)
+-- found Intel IPP (ICV version): 2020.0.0 [2020.0.0 Gold]
+-- at: /mnt/c/Codes/GSoC21/build/3rdparty/ippicv/ippicv_lnx/icv
+-- found Intel IPP Integration Wrappers sources: 2020.0.0
+-- at: /mnt/c/Codes/GSoC21/build/3rdparty/ippicv/ippicv_lnx/iw
+-- Could not find OpenBLAS include. Turning OpenBLAS_FOUND off
+-- Could not find OpenBLAS lib. Turning OpenBLAS_FOUND off
+-- Could NOT find Atlas (missing: Atlas_CBLAS_INCLUDE_DIR Atlas_CLAPACK_INCLUDE_DIR Atlas_CBLAS_LIBRARY Atlas_BLAS_LIBRARY Atlas_LAPACK_LIBRARY) 
+-- Could NOT find BLAS (missing: BLAS_LIBRARIES) 
+-- LAPACK requires BLAS
+-- A library with LAPACK API not found. Please specify library location.
+-- Could NOT find JNI (missing: JAVA_AWT_LIBRARY JAVA_JVM_LIBRARY JAVA_INCLUDE_PATH JAVA_INCLUDE_PATH2 JAVA_AWT_INCLUDE_PATH) 
+-- VTK is not found. Please set -DVTK_DIR in CMake to VTK build directory, or to VTK install subdirectory with VTKConfig.cmake file
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+-- OpenCV Python: during development append to PYTHONPATH: /mnt/c/Codes/GSoC21/build/python_loader
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+-- Allocator metrics storage type: 'long long'
+-- Registering hook 'INIT_MODULE_SOURCES_opencv_dnn': /mnt/c/Codes/GSoC21/opencv/modules/dnn/cmake/hooks/INIT_MODULE_SOURCES_opencv_dnn.cmake
+-- opencv_dnn: filter out cuda4dnn source code
+-- highgui: using builtin backend: NONE
+-- 
+-- General configuration for OpenCV 4.5.3-pre =====================================
+--   Version control:               4.5.2-267-g010cc97a9b-dirty
+-- 
+--   Platform:
+--     Timestamp:                   2021-07-26T14:13:08Z
+--     Host:                        Linux 4.4.0-19041-Microsoft x86_64
+--     CMake:                       3.16.3
+--     CMake generator:             Unix Makefiles
+--     CMake build tool:            /usr/bin/make
+--     Configuration:               Debug
+-- 
+--   CPU/HW features:
+--     Baseline:                    SSE SSE2 SSE3
+--       requested:                 SSE3
+--     Dispatched code generation:  SSE4_1 SSE4_2 FP16 AVX AVX2 AVX512_SKX
+--       requested:                 SSE4_1 SSE4_2 AVX FP16 AVX2 AVX512_SKX
+--       SSE4_1 (15 files):         + SSSE3 SSE4_1
+--       SSE4_2 (1 files):          + SSSE3 SSE4_1 POPCNT SSE4_2
+--       FP16 (0 files):            + SSSE3 SSE4_1 POPCNT SSE4_2 FP16 AVX
+--       AVX (4 files):             + SSSE3 SSE4_1 POPCNT SSE4_2 AVX
+--       AVX2 (29 files):           + SSSE3 SSE4_1 POPCNT SSE4_2 FP16 FMA3 AVX AVX2
+--       AVX512_SKX (4 files):      + SSSE3 SSE4_1 POPCNT SSE4_2 FP16 FMA3 AVX AVX2 AVX_512F AVX512_COMMON AVX512_SKX
+-- 
+--   C/C++:
+--     Built as dynamic libs?:      YES
+--     C++ standard:                11
+--     C++ Compiler:                /usr/bin/c++  (ver 9.3.0)
+--     C++ flags (Release):         -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -O3 -DNDEBUG  -DNDEBUG
+--     C++ flags (Debug):           -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -g  -O0 -DDEBUG -D_DEBUG
+--     C Compiler:                  /usr/bin/cc
+--     C flags (Release):           -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -O3 -DNDEBUG  -DNDEBUG
+--     C flags (Debug):             -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -g  -O0 -DDEBUG -D_DEBUG
+--     Linker flags (Release):      -Wl,--exclude-libs,libippicv.a -Wl,--exclude-libs,libippiw.a   -Wl,--gc-sections -Wl,--as-needed  
+--     Linker flags (Debug):        -Wl,--exclude-libs,libippicv.a -Wl,--exclude-libs,libippiw.a   -Wl,--gc-sections -Wl,--as-needed  
+--     ccache:                      NO
+--     Precompiled headers:         NO
+--     Extra dependencies:          dl m pthread rt
+--     3rdparty dependencies:
+-- 
+--   OpenCV modules:
+--     To be built:                 calib3d core dnn features2d flann gapi highgui imgcodecs imgproc ml objdetect photo python3 stitching video videoio
+--     Disabled:                    world
+--     Disabled by dependency:      -
+--     Unavailable:                 java python2 ts
+--     Applications:                apps
+--     Documentation:               NO
+--     Non-free algorithms:         NO
+-- 
+--   GUI: 
+--     GTK+:                        NO
+--     VTK support:                 NO
+-- 
+--   Media I/O: 
+--     ZLib:                        /usr/lib/x86_64-linux-gnu/libz.so (ver 1.2.11)
+--     JPEG:                        libjpeg-turbo (ver 2.1.0-62)
+--     WEBP:                        build (ver encoder: 0x020f)
+--     PNG:                         build (ver 1.6.37)
+--     TIFF:                        build (ver 42 - 4.2.0)
+--     JPEG 2000:                   build (ver 2.4.0)
+--     OpenEXR:                     build (ver 2.3.0)
+--     HDR:                         YES
+--     SUNRASTER:                   YES
+--     PXM:                         YES
+--     PFM:                         YES
+-- 
+--   Video I/O:
+--     DC1394:                      NO
+--     FFMPEG:                      NO
+--       avcodec:                   NO
+--       avformat:                  NO
+--       avutil:                    NO
+--       swscale:                   NO
+--       avresample:                NO
+--     GStreamer:                   NO
+--     v4l/v4l2:                    YES (linux/videodev2.h)
+-- 
+--   Parallel framework:            pthreads
+-- 
+--   Trace:                         YES (with Intel ITT)
+-- 
+--   Other third-party libraries:
+--     Intel IPP:                   2020.0.0 Gold [2020.0.0]
+--            at:                   /mnt/c/Codes/GSoC21/build/3rdparty/ippicv/ippicv_lnx/icv
+--     Intel IPP IW:                sources (2020.0.0)
+--               at:                /mnt/c/Codes/GSoC21/build/3rdparty/ippicv/ippicv_lnx/iw
+--     VA:                          NO
+--     Lapack:                      NO
+--     Eigen:                       NO
+--     Custom HAL:                  NO
+--     Protobuf:                    build (3.5.1)
+-- 
+--   OpenCL:                        YES (no extra features)
+--     Include path:                /mnt/c/Codes/GSoC21/opencv/3rdparty/include/opencl/1.2
+--     Link libraries:              Dynamic load
+-- 
+--   Python 3:
+--     Interpreter:                 /usr/bin/python3 (ver 3.8.10)
+--     Libraries:                   /usr/lib/x86_64-linux-gnu/libpython3.8.so (ver 3.8.10)
+--     numpy:                       /usr/lib/python3/dist-packages/numpy/core/include (ver 1.17.4)
+--     install path:                lib/python3.8/dist-packages/cv2/python-3.8
+-- 
+--   Python (for build):            /usr/bin/python3
+-- 
+--   Java:                          
+--     ant:                         NO
+--     JNI:                         NO
+--     Java wrappers:               NO
+--     Java tests:                  NO
+-- 
+--   Install to:                    /usr/local
+-- -----------------------------------------------------------------
+-- 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/c/Codes/GSoC21/build
+[  0%] Built target opencv_highgui_plugins
+[  0%] Built target opencv_videoio_plugins
+[  0%] Built target ittnotify
+[  2%] Built target libopenjp2
+[  4%] Built target ippiw
+[  9%] Built target libjpeg-turbo
+[ 13%] Built target libtiff
+[ 15%] Built target libpng
+[ 22%] Built target libprotobuf
+[ 23%] Built target quirc
+[ 28%] Built target gen_opencv_python_source
+[ 34%] Built target libwebp
+[ 43%] Built target IlmImf
+[ 45%] Built target ade
+[ 54%] Built target opencv_core
+[ 55%] Built target opencv_version
+[ 55%] Built target opencv_flann
+[ 56%] Built target opencv_ml
+[ 64%] Built target opencv_imgproc
+[ 66%] Built target opencv_photo
+[ 66%] Building CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/exif.cpp.o
+[ 66%] Building CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/matchers.cpp.o
+[ 66%] Building CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/orb.cpp.o
+[ 67%] Building CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/sift.dispatch.cpp.o
+[ 67%] Building CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/mser.cpp.o
+[ 67%] Building CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/sift.sse4_1.cpp.o
+[ 67%] Building CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/fast.avx2.cpp.o
+[ 67%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/dnn.cpp.o
+[ 67%] Building CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/sift.avx2.cpp.o
+[ 67%] Linking CXX shared library ../../lib/libopencv_imgcodecs.so
+[ 67%] Building CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/sift.avx512_skx.cpp.o
+[ 67%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/graph_simplifier.cpp.o
+[ 67%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/halide_scheduler.cpp.o
+[ 67%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/ie_ngraph.cpp.o
+[ 67%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/init.cpp.o
+[ 67%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/accum_layer.cpp.o
+[ 67%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/batch_norm_layer.cpp.o
+[ 68%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/blank_layer.cpp.o
+[ 68%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/concat_layer.cpp.o
+[ 70%] Built target opencv_imgcodecs
+[ 70%] Linking CXX shared library ../../lib/libopencv_features2d.so
+Scanning dependencies of target opencv_videoio
+[ 70%] Building CXX object modules/videoio/CMakeFiles/opencv_videoio.dir/src/videoio_registry.cpp.o
+[ 70%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/const_layer.cpp.o
+[ 70%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/convolution_layer.cpp.o
+[ 70%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/correlation_layer.cpp.o
+[ 72%] Built target opencv_features2d
+[ 72%] Building CXX object modules/videoio/CMakeFiles/opencv_videoio.dir/src/videoio_c.cpp.o
+[ 72%] Processing OpenCL kernels (calib3d)
+[ 72%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/crop_and_resize_layer.cpp.o
+[ 72%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/detection_output_layer.cpp.o
+[ 72%] Building CXX object modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap.cpp.o
+[ 72%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/elementwise_layers.cpp.o
+[ 72%] Building CXX object modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_images.cpp.o
+Scanning dependencies of target opencv_calib3d
+[ 72%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/ap3p.cpp.o
+[ 72%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/eltwise_layer.cpp.o
+[ 72%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/flatten_layer.cpp.o
+[ 72%] Building CXX object modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_mjpeg_encoder.cpp.o
+[ 72%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/flow_warp_layer.cpp.o
+[ 73%] Building CXX object modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_mjpeg_decoder.cpp.o
+[ 74%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calibinit.cpp.o
+[ 75%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/fully_connected_layer.cpp.o
+[ 75%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/layers_common.cpp.o
+[ 75%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/lrn_layer.cpp.o
+[ 75%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/max_unpooling_layer.cpp.o
+[ 75%] Building CXX object modules/videoio/CMakeFiles/opencv_videoio.dir/src/backend_plugin.cpp.o
+[ 75%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/mvn_layer.cpp.o
+[ 75%] Building CXX object modules/videoio/CMakeFiles/opencv_videoio.dir/src/backend_static.cpp.o
+[ 75%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/normalize_bbox_layer.cpp.o
+[ 75%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/padding_layer.cpp.o
+[ 75%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calibration.cpp.o
+[ 75%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calibration_handeye.cpp.o
+[ 75%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/checkchessboard.cpp.o
+[ 75%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/chessboard.cpp.o
+[ 75%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/circlesgrid.cpp.o
+[ 75%] Building CXX object modules/videoio/CMakeFiles/opencv_videoio.dir/src/container_avi.cpp.o
+[ 75%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/compat_ptsetreg.cpp.o
+[ 75%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/permute_layer.cpp.o
+[ 75%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/dls.cpp.o
+[ 75%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/epnp.cpp.o
+[ 75%] Building CXX object modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_v4l.cpp.o
+[ 75%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fisheye.cpp.o
+[ 75%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/five-point.cpp.o
+[ 76%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fundam.cpp.o
+[ 76%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/pooling_layer.cpp.o
+[ 76%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/homography_decomp.cpp.o
+[ 76%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/ippe.cpp.o
+[ 76%] Linking CXX shared library ../../lib/libopencv_videoio.so
+[ 76%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/levmarq.cpp.o
+[ 76%] Built target opencv_videoio
+Scanning dependencies of target opencv_highgui
+[ 76%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/main.cpp.o
+[ 76%] Building CXX object modules/highgui/CMakeFiles/opencv_highgui.dir/src/backend.cpp.o
+[ 76%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/p3p.cpp.o
+[ 76%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/polynom_solver.cpp.o
+[ 76%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/prior_box_layer.cpp.o
+[ 76%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/posit.cpp.o
+[ 76%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/ptsetreg.cpp.o
+[ 76%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/quadsubpix.cpp.o
+[ 76%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/rho.cpp.o
+[ 77%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/solvepnp.cpp.o
+[ 77%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/sqpnp.cpp.o
+[ 77%] Building CXX object modules/highgui/CMakeFiles/opencv_highgui.dir/src/window.cpp.o
+[ 77%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereobm.cpp.o
+[ 77%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/proposal_layer.cpp.o
+[ 77%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereosgbm.cpp.o
+[ 77%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/triangulate.cpp.o
+[ 77%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/undistort.dispatch.cpp.o
+[ 77%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/upnp.cpp.o
+[ 77%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/usac/degeneracy.cpp.o
+[ 77%] Building CXX object modules/highgui/CMakeFiles/opencv_highgui.dir/src/roiSelector.cpp.o
+[ 77%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/usac/dls_solver.cpp.o
+[ 77%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/usac/essential_solver.cpp.o
+[ 77%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/usac/estimator.cpp.o
+[ 78%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/recurrent_layers.cpp.o
+[ 79%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/usac/fundamental_solver.cpp.o
+[ 79%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/usac/gamma_values.cpp.o
+[ 79%] Linking CXX shared library ../../lib/libopencv_highgui.so
+[ 79%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/usac/homography_solver.cpp.o
+[ 79%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/usac/local_optimization.cpp.o
+[ 79%] Built target opencv_highgui
+Scanning dependencies of target opencv_annotation
+[ 79%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/usac/pnp_solver.cpp.o
+[ 79%] Building CXX object apps/annotation/CMakeFiles/opencv_annotation.dir/opencv_annotation.cpp.o
+[ 79%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/usac/quality.cpp.o
+[ 79%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/usac/ransac_solvers.cpp.o
+[ 79%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/region_layer.cpp.o
+[ 79%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/usac/sampler.cpp.o
+[ 79%] Linking CXX executable ../../bin/opencv_annotation
+[ 79%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/usac/termination.cpp.o
+[ 79%] Built target opencv_annotation
+[ 79%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/usac/utils.cpp.o
+Scanning dependencies of target opencv_visualisation
+[ 79%] Building CXX object apps/visualisation/CMakeFiles/opencv_visualisation.dir/opencv_visualisation.cpp.o
+[ 79%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/opencl_kernels_calib3d.cpp.o
+[ 80%] Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/undistort.avx2.cpp.o
+[ 80%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/reorg_layer.cpp.o
+[ 80%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/reshape_layer.cpp.o
+[ 80%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/resize_layer.cpp.o
+[ 80%] Linking CXX executable ../../bin/opencv_visualisation
+[ 80%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/scale_layer.cpp.o
+[ 80%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/shuffle_channel_layer.cpp.o
+[ 80%] Built target opencv_visualisation
+[ 80%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/slice_layer.cpp.o
+[ 80%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/softmax_layer.cpp.o
+[ 80%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/split_layer.cpp.o
+[ 80%] Linking CXX shared library ../../lib/libopencv_calib3d.so
+[ 80%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/model.cpp.o
+[ 81%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/nms.cpp.o
+[ 81%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/ocl4dnn/src/common.cpp.o
+[ 81%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/ocl4dnn/src/math_functions.cpp.o
+[ 81%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/ocl4dnn/src/ocl4dnn_conv_spatial.cpp.o
+[ 81%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/ocl4dnn/src/ocl4dnn_inner_product.cpp.o
+[ 81%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/ocl4dnn/src/ocl4dnn_lrn.cpp.o
+[ 81%] Built target opencv_calib3d
+[ 81%] Processing OpenCL kernels (objdetect)
+[ 81%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/ocl4dnn/src/ocl4dnn_pool.cpp.o
+Scanning dependencies of target opencv_objdetect
+[ 81%] Building CXX object modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/cascadedetect.cpp.o
+[ 81%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/ocl4dnn/src/ocl4dnn_softmax.cpp.o
+[ 81%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/onnx/onnx_graph_simplifier.cpp.o
+[ 81%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/onnx/onnx_importer.cpp.o
+[ 81%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/op_halide.cpp.o
+[ 82%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/op_inf_engine.cpp.o
+[ 82%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/op_vkcom.cpp.o
+[ 82%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/tengine4dnn/src/tengine_graph_convolution.cpp.o
+[ 82%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/tensorflow/tf_graph_simplifier.cpp.o
+[ 82%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/tensorflow/tf_importer.cpp.o
+[ 82%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/torch/THDiskFile.cpp.o
+[ 82%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/torch/THFile.cpp.o
+[ 82%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/tensorflow/tf_io.cpp.o
+[ 82%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/torch/THGeneral.cpp.o
+[ 82%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/torch/torch_importer.cpp.o
+[ 82%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/shader/avg_pool_spv.cpp.o
+[ 82%] Building CXX object modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/cascadedetect_convert.cpp.o
+[ 83%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/shader/concat_spv.cpp.o
+[ 83%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/shader/conv48_spv.cpp.o
+[ 83%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/shader/conv_spv.cpp.o
+[ 83%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/shader/dw_conv_spv.cpp.o
+[ 83%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/shader/lrn_spv.cpp.o
+[ 83%] Building CXX object modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/detection_based_tracker.cpp.o
+[ 83%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/shader/max_pool_spv.cpp.o
+[ 83%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/shader/permute_spv.cpp.o
+[ 83%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/shader/prior_box_spv.cpp.o
+[ 83%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/shader/relu_spv.cpp.o
+[ 83%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/shader/softmax_spv.cpp.o
+[ 83%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/src/buffer.cpp.o
+[ 84%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/src/context.cpp.o
+[ 84%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/src/internal.cpp.o
+[ 84%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/src/op_base.cpp.o
+[ 84%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/src/op_concat.cpp.o
+[ 84%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/src/op_conv.cpp.o
+[ 84%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/src/op_lrn.cpp.o
+[ 84%] Building CXX object modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/hog.cpp.o
+[ 84%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/src/op_permute.cpp.o
+[ 84%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/src/op_pool.cpp.o
+[ 84%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/src/op_prior_box.cpp.o
+[ 84%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/src/op_relu.cpp.o
+[ 84%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/src/op_softmax.cpp.o
+[ 85%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/src/tensor.cpp.o
+[ 85%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/vulkan/vk_functions.cpp.o
+[ 85%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/vulkan/vk_loader.cpp.o
+[ 85%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/opencl_kernels_dnn.cpp.o
+[ 85%] Building CXX object modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/main.cpp.o
+[ 85%] Processing OpenCL kernels (stitching)
+[ 85%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/layers/layers_common.avx.cpp.o
+[ 85%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/layers/layers_common.avx2.cpp.o
+[ 85%] Building CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/layers/layers_common.avx512_skx.cpp.o
+[ 85%] Building CXX object modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/qrcode.cpp.o
+Scanning dependencies of target opencv_stitching
+[ 85%] Building CXX object modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels_objdetect.cpp.o
+[ 85%] Building CXX object modules/stitching/CMakeFiles/opencv_stitching.dir/src/autocalib.cpp.o
+Scanning dependencies of target opencv_interactive-calibration
+[ 85%] Building CXX object apps/interactive-calibration/CMakeFiles/opencv_interactive-calibration.dir/calibController.cpp.o
+[ 85%] Building CXX object apps/interactive-calibration/CMakeFiles/opencv_interactive-calibration.dir/calibPipeline.cpp.o
+[ 86%] Building CXX object apps/interactive-calibration/CMakeFiles/opencv_interactive-calibration.dir/frameProcessor.cpp.o
+[ 86%] Building CXX object apps/interactive-calibration/CMakeFiles/opencv_interactive-calibration.dir/main.cpp.o
+[ 86%] Building CXX object modules/stitching/CMakeFiles/opencv_stitching.dir/src/blenders.cpp.o
+[ 86%] Linking CXX shared library ../../lib/libopencv_dnn.so
+[ 86%] Building CXX object apps/interactive-calibration/CMakeFiles/opencv_interactive-calibration.dir/parametersController.cpp.o
+[ 86%] Building CXX object apps/interactive-calibration/CMakeFiles/opencv_interactive-calibration.dir/rotationConverters.cpp.o
+[ 86%] Building CXX object modules/stitching/CMakeFiles/opencv_stitching.dir/src/camera.cpp.o
+[ 86%] Building CXX object modules/stitching/CMakeFiles/opencv_stitching.dir/src/exposure_compensate.cpp.o
+[ 87%] Building CXX object modules/stitching/CMakeFiles/opencv_stitching.dir/src/matchers.cpp.o
+[ 87%] Building CXX object modules/stitching/CMakeFiles/opencv_stitching.dir/src/motion_estimators.cpp.o
+[ 87%] Linking CXX executable ../../bin/opencv_interactive-calibration
+[ 87%] Built target opencv_interactive-calibration
+[ 87%] Building CXX object modules/stitching/CMakeFiles/opencv_stitching.dir/src/seam_finders.cpp.o
+[ 87%] Building CXX object modules/stitching/CMakeFiles/opencv_stitching.dir/src/stitcher.cpp.o
+[ 87%] Linking CXX shared library ../../lib/libopencv_objdetect.so
+[ 87%] Building CXX object modules/stitching/CMakeFiles/opencv_stitching.dir/src/timelapsers.cpp.o
+[ 87%] Built target opencv_objdetect
+[ 87%] Building CXX object modules/stitching/CMakeFiles/opencv_stitching.dir/src/util.cpp.o
+[ 87%] Building CXX object modules/stitching/CMakeFiles/opencv_stitching.dir/src/warpers.cpp.o
+[ 87%] Building CXX object modules/stitching/CMakeFiles/opencv_stitching.dir/src/warpers_cuda.cpp.o
+[ 87%] Building CXX object modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels_stitching.cpp.o
+[ 89%] Built target opencv_dnn
+[ 89%] Processing OpenCL kernels (video)
+Scanning dependencies of target opencv_model_diagnostics
+[ 89%] Building CXX object apps/model-diagnostics/CMakeFiles/opencv_model_diagnostics.dir/model_diagnostics.cpp.o
+Scanning dependencies of target opencv_video
+[ 89%] Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/bgfg_KNN.cpp.o
+[ 89%] Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix2.cpp.o
+[ 89%] Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/camshift.cpp.o
+[ 89%] Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/dis_flow.cpp.o
+[ 89%] Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/ecc.cpp.o
+[ 89%] Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/kalman.cpp.o
+[ 90%] Linking CXX executable ../../bin/opencv_model_diagnostics
+[ 90%] Built target opencv_model_diagnostics
+[ 90%] Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/lkpyramid.cpp.o
+[ 90%] Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/optflowgf.cpp.o
+[ 90%] Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/optical_flow_io.cpp.o
+[ 91%] Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/tracking/detail/tracker_feature.cpp.o
+[ 91%] Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/tracking/detail/tracker_feature_set.cpp.o
+[ 91%] Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/tracking/detail/tracker_mil_model.cpp.o
+[ 91%] Linking CXX shared library ../../lib/libopencv_stitching.so
+[ 91%] Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/tracking/detail/tracker_mil_state.cpp.o
+[ 91%] Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/tracking/detail/tracker_model.cpp.o
+[ 91%] Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/tracking/detail/tracker_sampler.cpp.o
+[ 91%] Built target opencv_stitching
+[ 91%] Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/tracking/detail/tracker_sampler_algorithm.cpp.o
+[ 91%] Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/tracking/detail/tracker_state_estimator.cpp.o
+[ 91%] Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/tracking/detail/tracking_feature.cpp.o
+[ 91%] Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/tracking/detail/tracking_online_mil.cpp.o
+[ 91%] Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/tracking/tracker.cpp.o
+[ 92%] Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/tracking/tracker_dasiamrpn.cpp.o
+[ 92%] Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/tracking/tracker_goturn.cpp.o
+[ 92%] Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/tracking/tracker_mil.cpp.o
+[ 92%] Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/variational_refinement.cpp.o
+[ 92%] Building CXX object modules/video/CMakeFiles/opencv_video.dir/opencl_kernels_video.cpp.o
+[ 92%] Linking CXX shared library ../../lib/libopencv_video.so
+[ 92%] Built target opencv_video
+Scanning dependencies of target opencv_gapi
+[ 92%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/grunarg.cpp.o
+[ 93%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/gorigin.cpp.o
+[ 93%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/gmat.cpp.o
+[ 93%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/garray.cpp.o
+[ 93%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/gopaque.cpp.o
+[ 93%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/gscalar.cpp.o
+[ 93%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/gframe.cpp.o
+[ 93%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/gkernel.cpp.o
+[ 93%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/gbackend.cpp.o
+[ 93%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/gproto.cpp.o
+[ 93%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/gnode.cpp.o
+[ 93%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/gcall.cpp.o
+[ 94%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/gcomputation.cpp.o
+[ 94%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/operators.cpp.o
+[ 94%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/kernels_core.cpp.o
+[ 94%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/kernels_imgproc.cpp.o
+[ 94%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/kernels_video.cpp.o
+[ 94%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/kernels_nnparsers.cpp.o
+[ 94%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/kernels_streaming.cpp.o
+[ 94%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/kernels_stereo.cpp.o
+[ 94%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/render.cpp.o
+[ 94%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/render_ocv.cpp.o
+[ 94%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/ginfer.cpp.o
+[ 95%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/media.cpp.o
+[ 95%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/rmat.cpp.o
+[ 95%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/compiler/gmodel.cpp.o
+[ 95%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/compiler/gmodelbuilder.cpp.o
+[ 95%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/compiler/gislandmodel.cpp.o
+[ 95%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/compiler/gcompiler.cpp.o
+[ 95%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/compiler/gcompiled.cpp.o
+[ 95%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/compiler/gstreaming.cpp.o
+[ 95%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/compiler/passes/helpers.cpp.o
+[ 95%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/compiler/passes/dump_dot.cpp.o
+[ 95%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/compiler/passes/islands.cpp.o
+[ 96%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/compiler/passes/meta.cpp.o
+[ 96%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/compiler/passes/kernels.cpp.o
+[ 96%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/compiler/passes/exec.cpp.o
+[ 96%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/compiler/passes/transformations.cpp.o
+[ 96%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/compiler/passes/pattern_matching.cpp.o
+[ 96%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/compiler/passes/perform_substitution.cpp.o
+[ 96%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/compiler/passes/streaming.cpp.o
+[ 96%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/compiler/passes/intrin.cpp.o
+[ 96%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/executor/gexecutor.cpp.o
+[ 96%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/executor/gtbbexecutor.cpp.o
+[ 96%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/executor/gstreamingexecutor.cpp.o
+[ 97%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/executor/gasync.cpp.o
+[ 97%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/cpu/gcpubackend.cpp.o
+[ 97%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/cpu/gcpukernel.cpp.o
+[ 97%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/cpu/gcpuimgproc.cpp.o
+[ 97%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/cpu/gcpustereo.cpp.o
+[ 97%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/cpu/gcpuvideo.cpp.o
+[ 97%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/cpu/gcpucore.cpp.o
+[ 97%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/cpu/gnnparsers.cpp.o
+[ 97%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/fluid/gfluidbuffer.cpp.o
+[ 97%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/fluid/gfluidbackend.cpp.o
+[ 97%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/fluid/gfluidimgproc.cpp.o
+[ 98%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/fluid/gfluidimgproc_func.dispatch.cpp.o
+[ 98%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/fluid/gfluidcore.cpp.o
+[ 98%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/ocl/goclbackend.cpp.o
+[ 98%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/ocl/goclkernel.cpp.o
+[ 98%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/ocl/goclimgproc.cpp.o
+[ 98%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/ocl/goclcore.cpp.o
+[ 98%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/ie/giebackend.cpp.o
+[ 98%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/ie/giebackend/giewrapper.cpp.o
+[ 98%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/onnx/gonnxbackend.cpp.o
+[ 98%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/render/grenderocv.cpp.o
+[ 98%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/render/ft_render.cpp.o
+[ 99%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/plaidml/gplaidmlcore.cpp.o
+[ 99%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/plaidml/gplaidmlbackend.cpp.o
+[ 99%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/common/gmetabackend.cpp.o
+[ 99%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/common/gcompoundbackend.cpp.o
+[ 99%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/common/gcompoundkernel.cpp.o
+[ 99%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/s11n.cpp.o
+[ 99%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/common/serialization.cpp.o
+[ 99%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/streaming/gstreamingbackend.cpp.o
+[ 99%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/ie/bindings_ie.cpp.o
+[ 99%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/python/gpythonbackend.cpp.o
+[ 99%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/utils/itt.cpp.o
+[100%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/backends/fluid/gfluidimgproc_func.sse4_1.cpp.o
+[100%] Building CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/backends/fluid/gfluidimgproc_func.avx2.cpp.o
+[100%] Linking CXX shared library ../../lib/libopencv_gapi.so
+[100%] Built target opencv_gapi
+Scanning dependencies of target opencv_python3
+[100%] Building CXX object modules/python3/CMakeFiles/opencv_python3.dir/__/src2/cv2.cpp.o
+[100%] Linking CXX shared module ../../lib/python3/cv2.cpython-38-x86_64-linux-gnu.so
+[100%] Built target opencv_python3
+[  2%] Built target libopenjp2
+[  2%] Built target opencv_highgui_plugins
+[  2%] Built target opencv_videoio_plugins
+[  2%] Built target ittnotify
+[  4%] Built target ippiw
+[ 13%] Built target opencv_core
+[ 13%] Built target opencv_flann
+[ 21%] Built target opencv_imgproc
+[ 22%] Built target opencv_ml
+[ 24%] Built target opencv_photo
+[ 31%] Built target libprotobuf
+[ 41%] Built target opencv_dnn
+[ 44%] Built target opencv_features2d
+[ 49%] Built target libjpeg-turbo
+[ 53%] Built target libtiff
+[ 63%] Built target libwebp
+[ 65%] Built target libpng
+[ 74%] Built target IlmImf
+[ 76%] Built target opencv_imgcodecs
+[ 77%] Built target opencv_videoio
+[ 82%] Built target opencv_calib3d
+[ 82%] Built target opencv_highgui
+[ 83%] Built target quirc
+[ 83%] Built target opencv_objdetect
+[ 84%] Built target opencv_stitching
+[ 86%] Built target opencv_video
+[ 88%] Built target ade
+[ 96%] Built target opencv_gapi
+[ 97%] Built target gen_opencv_python_source
+[ 97%] Built target opencv_python3
+[ 97%] Built target opencv_annotation
+[ 97%] Built target opencv_visualisation
+[ 98%] Built target opencv_interactive-calibration
+[ 99%] Built target opencv_version
+[100%] Built target opencv_model_diagnostics
+Install the project...
+-- Install configuration: "Debug"
+-- Up-to-date: /usr/local/share/licenses/opencv4/ippicv-readme.htm
+-- Up-to-date: /usr/local/share/licenses/opencv4/ippicv-EULA.txt
+-- Up-to-date: /usr/local/share/licenses/opencv4/ippicv-third-party-programs.txt
+-- Up-to-date: /usr/local/share/licenses/opencv4/ippiw-support.txt
+-- Up-to-date: /usr/local/share/licenses/opencv4/ippiw-third-party-programs.txt
+-- Up-to-date: /usr/local/share/licenses/opencv4/ippiw-EULA.txt
+-- Up-to-date: /usr/local/share/licenses/opencv4/opencl-headers-LICENSE.txt
+-- Installing: /usr/local/include/opencv4/opencv2/cvconfig.h
+-- Installing: /usr/local/include/opencv4/opencv2/opencv_modules.hpp
+-- Installing: /usr/local/lib/cmake/opencv4/OpenCVModules.cmake
+-- Installing: /usr/local/lib/cmake/opencv4/OpenCVModules-debug.cmake
+-- Installing: /usr/local/lib/cmake/opencv4/OpenCVConfig-version.cmake
+-- Installing: /usr/local/lib/cmake/opencv4/OpenCVConfig.cmake
+-- Installing: /usr/local/bin/setup_vars_opencv4.sh
+-- Up-to-date: /usr/local/share/opencv4/valgrind.supp
+-- Up-to-date: /usr/local/share/opencv4/valgrind_3rdparty.supp
+-- Up-to-date: /usr/local/share/licenses/opencv4/libjpeg-turbo-README.md
+-- Up-to-date: /usr/local/share/licenses/opencv4/libjpeg-turbo-LICENSE.md
+-- Up-to-date: /usr/local/share/licenses/opencv4/libjpeg-turbo-README.ijg
+-- Up-to-date: /usr/local/share/licenses/opencv4/libtiff-COPYRIGHT
+-- Up-to-date: /usr/local/share/licenses/opencv4/libopenjp2-README.md
+-- Up-to-date: /usr/local/share/licenses/opencv4/libopenjp2-LICENSE
+-- Up-to-date: /usr/local/share/licenses/opencv4/libpng-LICENSE
+-- Up-to-date: /usr/local/share/licenses/opencv4/libpng-README
+-- Up-to-date: /usr/local/share/licenses/opencv4/openexr-LICENSE
+-- Up-to-date: /usr/local/share/licenses/opencv4/openexr-AUTHORS.ilmbase
+-- Up-to-date: /usr/local/share/licenses/opencv4/openexr-AUTHORS.openexr
+-- Up-to-date: /usr/local/share/licenses/opencv4/protobuf-LICENSE
+-- Up-to-date: /usr/local/share/licenses/opencv4/protobuf-README.md
+-- Up-to-date: /usr/local/share/licenses/opencv4/quirc-LICENSE
+-- Up-to-date: /usr/local/share/licenses/opencv4/ittnotify-LICENSE.BSD
+-- Up-to-date: /usr/local/share/licenses/opencv4/ittnotify-LICENSE.GPL
+-- Up-to-date: /usr/local/include/opencv4/opencv2/opencv.hpp
+-- Up-to-date: /usr/local/share/licenses/opencv4/ade-LICENSE
+-- Installing: /usr/local/lib/libopencv_core.so.4.5.3
+-- Up-to-date: /usr/local/lib/libopencv_core.so.4.5
+-- Set runtime path of "/usr/local/lib/libopencv_core.so.4.5.3" to "/usr/local/lib"
+-- Up-to-date: /usr/local/lib/libopencv_core.so
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/affine.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/async.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/base.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/bindings_utils.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/bufferpool.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/check.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/core.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/core_c.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cuda.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cuda.inl.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cuda/block.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cuda/border_interpolate.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cuda/color.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cuda/common.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cuda/datamov_utils.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cuda/detail/color_detail.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cuda/detail/reduce.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cuda/detail/reduce_key_val.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cuda/detail/transform_detail.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cuda/detail/type_traits_detail.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cuda/detail/vec_distance_detail.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cuda/dynamic_smem.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cuda/emulation.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cuda/filters.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cuda/funcattrib.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cuda/functional.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cuda/limits.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cuda/reduce.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cuda/saturate_cast.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cuda/scan.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cuda/simd_functions.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cuda/transform.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cuda/type_traits.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cuda/utility.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cuda/vec_distance.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cuda/vec_math.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cuda/vec_traits.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cuda/warp.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cuda/warp_reduce.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cuda/warp_shuffle.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cuda_stream_accessor.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cuda_types.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cv_cpu_dispatch.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cv_cpu_helper.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cvdef.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cvstd.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cvstd.inl.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/cvstd_wrapper.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/detail/async_promise.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/detail/exception_ptr.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/directx.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/dualquaternion.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/dualquaternion.inl.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/eigen.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/fast_math.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/hal/hal.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/hal/interface.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/hal/intrin.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/hal/intrin_avx.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/hal/intrin_avx512.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/hal/intrin_cpp.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/hal/intrin_forward.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/hal/intrin_msa.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/hal/intrin_neon.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/hal/intrin_rvv.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/hal/intrin_rvv071.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/hal/intrin_sse.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/hal/intrin_sse_em.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/hal/intrin_vsx.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/hal/intrin_wasm.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/hal/msa_macros.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/hal/simd_utils.impl.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/mat.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/mat.inl.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/matx.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/neon_utils.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/ocl.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/ocl_genbase.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/opencl/ocl_defs.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/opencl/opencl_info.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/opencl/opencl_svm.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/opencl/runtime/autogenerated/opencl_clblas.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/opencl/runtime/autogenerated/opencl_clfft.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/opencl/runtime/autogenerated/opencl_core.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/opencl/runtime/autogenerated/opencl_core_wrappers.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/opencl/runtime/autogenerated/opencl_gl.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/opencl/runtime/autogenerated/opencl_gl_wrappers.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/opencl/runtime/opencl_clblas.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/opencl/runtime/opencl_clfft.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/opencl/runtime/opencl_core.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/opencl/runtime/opencl_core_wrappers.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/opencl/runtime/opencl_gl.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/opencl/runtime/opencl_gl_wrappers.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/opencl/runtime/opencl_svm_20.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/opencl/runtime/opencl_svm_definitions.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/opencl/runtime/opencl_svm_hsa_extension.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/opengl.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/operations.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/optim.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/ovx.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/parallel/backend/parallel_for.openmp.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/parallel/backend/parallel_for.tbb.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/parallel/parallel_backend.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/persistence.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/quaternion.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/quaternion.inl.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/saturate.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/simd_intrinsics.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/softfloat.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/sse_utils.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/traits.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/types.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/types_c.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/utility.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/utils/allocator_stats.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/utils/allocator_stats.impl.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/utils/filesystem.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/utils/instrumentation.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/utils/logger.defines.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/utils/logger.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/utils/logtag.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/utils/tls.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/utils/trace.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/va_intel.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/version.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/core/vsx_utils.hpp
+-- Up-to-date: /usr/local/share/licenses/opencv4/SoftFloat-COPYING.txt
+-- Installing: /usr/local/lib/libopencv_flann.so.4.5.3
+-- Up-to-date: /usr/local/lib/libopencv_flann.so.4.5
+-- Set runtime path of "/usr/local/lib/libopencv_flann.so.4.5.3" to "/usr/local/lib"
+-- Up-to-date: /usr/local/lib/libopencv_flann.so
+-- Up-to-date: /usr/local/include/opencv4/opencv2/flann.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/flann/all_indices.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/flann/allocator.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/flann/any.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/flann/autotuned_index.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/flann/composite_index.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/flann/config.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/flann/defines.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/flann/dist.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/flann/dummy.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/flann/dynamic_bitset.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/flann/flann.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/flann/flann_base.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/flann/general.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/flann/ground_truth.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/flann/hdf5.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/flann/heap.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/flann/hierarchical_clustering_index.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/flann/index_testing.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/flann/kdtree_index.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/flann/kdtree_single_index.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/flann/kmeans_index.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/flann/linear_index.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/flann/logger.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/flann/lsh_index.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/flann/lsh_table.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/flann/matrix.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/flann/miniflann.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/flann/nn_index.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/flann/object_factory.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/flann/params.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/flann/random.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/flann/result_set.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/flann/sampling.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/flann/saving.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/flann/simplex_downhill.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/flann/timer.h
+-- Installing: /usr/local/lib/libopencv_imgproc.so.4.5.3
+-- Up-to-date: /usr/local/lib/libopencv_imgproc.so.4.5
+-- Set runtime path of "/usr/local/lib/libopencv_imgproc.so.4.5.3" to "/usr/local/lib"
+-- Up-to-date: /usr/local/lib/libopencv_imgproc.so
+-- Up-to-date: /usr/local/include/opencv4/opencv2/imgproc.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/imgproc/bindings.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/imgproc/detail/gcgraph.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/imgproc/hal/hal.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/imgproc/hal/interface.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/imgproc/imgproc.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/imgproc/imgproc_c.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/imgproc/segmentation.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/imgproc/types_c.h
+-- Installing: /usr/local/lib/libopencv_ml.so.4.5.3
+-- Up-to-date: /usr/local/lib/libopencv_ml.so.4.5
+-- Set runtime path of "/usr/local/lib/libopencv_ml.so.4.5.3" to "/usr/local/lib"
+-- Up-to-date: /usr/local/lib/libopencv_ml.so
+-- Up-to-date: /usr/local/include/opencv4/opencv2/ml.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/ml/ml.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/ml/ml.inl.hpp
+-- Installing: /usr/local/lib/libopencv_photo.so.4.5.3
+-- Up-to-date: /usr/local/lib/libopencv_photo.so.4.5
+-- Set runtime path of "/usr/local/lib/libopencv_photo.so.4.5.3" to "/usr/local/lib"
+-- Up-to-date: /usr/local/lib/libopencv_photo.so
+-- Up-to-date: /usr/local/include/opencv4/opencv2/photo.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/photo/cuda.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/photo/legacy/constants_c.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/photo/photo.hpp
+-- Installing: /usr/local/lib/libopencv_dnn.so.4.5.3
+-- Up-to-date: /usr/local/lib/libopencv_dnn.so.4.5
+-- Set runtime path of "/usr/local/lib/libopencv_dnn.so.4.5.3" to "/usr/local/lib"
+-- Up-to-date: /usr/local/lib/libopencv_dnn.so
+-- Up-to-date: /usr/local/include/opencv4/opencv2/dnn.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/dnn/all_layers.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/dnn/dict.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/dnn/dnn.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/dnn/dnn.inl.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/dnn/layer.details.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/dnn/layer.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/dnn/shape_utils.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/dnn/utils/inference_engine.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/dnn/version.hpp
+-- Installing: /usr/local/lib/libopencv_features2d.so.4.5.3
+-- Up-to-date: /usr/local/lib/libopencv_features2d.so.4.5
+-- Set runtime path of "/usr/local/lib/libopencv_features2d.so.4.5.3" to "/usr/local/lib"
+-- Up-to-date: /usr/local/lib/libopencv_features2d.so
+-- Up-to-date: /usr/local/include/opencv4/opencv2/features2d.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/features2d/features2d.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/features2d/hal/interface.h
+-- Installing: /usr/local/lib/libopencv_imgcodecs.so.4.5.3
+-- Up-to-date: /usr/local/lib/libopencv_imgcodecs.so.4.5
+-- Set runtime path of "/usr/local/lib/libopencv_imgcodecs.so.4.5.3" to "/usr/local/lib"
+-- Up-to-date: /usr/local/lib/libopencv_imgcodecs.so
+-- Up-to-date: /usr/local/include/opencv4/opencv2/imgcodecs.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs_c.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/imgcodecs/ios.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/imgcodecs/legacy/constants_c.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/imgcodecs/macosx.h
+-- Installing: /usr/local/lib/libopencv_videoio.so.4.5.3
+-- Up-to-date: /usr/local/lib/libopencv_videoio.so.4.5
+-- Set runtime path of "/usr/local/lib/libopencv_videoio.so.4.5.3" to "/usr/local/lib"
+-- Up-to-date: /usr/local/lib/libopencv_videoio.so
+-- Up-to-date: /usr/local/include/opencv4/opencv2/videoio.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/videoio/cap_ios.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/videoio/legacy/constants_c.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/videoio/registry.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/videoio/videoio.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/videoio/videoio_c.h
+-- Installing: /usr/local/lib/libopencv_calib3d.so.4.5.3
+-- Up-to-date: /usr/local/lib/libopencv_calib3d.so.4.5
+-- Set runtime path of "/usr/local/lib/libopencv_calib3d.so.4.5.3" to "/usr/local/lib"
+-- Up-to-date: /usr/local/lib/libopencv_calib3d.so
+-- Up-to-date: /usr/local/include/opencv4/opencv2/calib3d.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/calib3d/calib3d.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/calib3d/calib3d_c.h
+-- Installing: /usr/local/lib/libopencv_highgui.so.4.5.3
+-- Up-to-date: /usr/local/lib/libopencv_highgui.so.4.5
+-- Set runtime path of "/usr/local/lib/libopencv_highgui.so.4.5.3" to "/usr/local/lib"
+-- Up-to-date: /usr/local/lib/libopencv_highgui.so
+-- Up-to-date: /usr/local/include/opencv4/opencv2/highgui.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/highgui/highgui.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/highgui/highgui_c.h
+-- Installing: /usr/local/lib/libopencv_objdetect.so.4.5.3
+-- Up-to-date: /usr/local/lib/libopencv_objdetect.so.4.5
+-- Set runtime path of "/usr/local/lib/libopencv_objdetect.so.4.5.3" to "/usr/local/lib"
+-- Up-to-date: /usr/local/lib/libopencv_objdetect.so
+-- Up-to-date: /usr/local/include/opencv4/opencv2/objdetect.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/objdetect/objdetect.hpp
+-- Installing: /usr/local/lib/libopencv_stitching.so.4.5.3
+-- Up-to-date: /usr/local/lib/libopencv_stitching.so.4.5
+-- Set runtime path of "/usr/local/lib/libopencv_stitching.so.4.5.3" to "/usr/local/lib"
+-- Up-to-date: /usr/local/lib/libopencv_stitching.so
+-- Up-to-date: /usr/local/include/opencv4/opencv2/stitching.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/stitching/detail/autocalib.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/stitching/detail/blenders.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/stitching/detail/camera.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/stitching/detail/exposure_compensate.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/stitching/detail/matchers.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/stitching/detail/seam_finders.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/stitching/detail/timelapsers.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/stitching/detail/util.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/stitching/detail/util_inl.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/stitching/detail/warpers.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/stitching/detail/warpers_inl.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/stitching/warpers.hpp
+-- Installing: /usr/local/lib/libopencv_video.so.4.5.3
+-- Up-to-date: /usr/local/lib/libopencv_video.so.4.5
+-- Set runtime path of "/usr/local/lib/libopencv_video.so.4.5.3" to "/usr/local/lib"
+-- Up-to-date: /usr/local/lib/libopencv_video.so
+-- Up-to-date: /usr/local/include/opencv4/opencv2/video.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/video/background_segm.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/video/detail/tracking.detail.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/video/legacy/constants_c.h
+-- Up-to-date: /usr/local/include/opencv4/opencv2/video/tracking.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/video/video.hpp
+-- Installing: /usr/local/lib/libopencv_gapi.so.4.5.3
+-- Up-to-date: /usr/local/lib/libopencv_gapi.so.4.5
+-- Set runtime path of "/usr/local/lib/libopencv_gapi.so.4.5.3" to "/usr/local/lib"
+-- Up-to-date: /usr/local/lib/libopencv_gapi.so
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/core.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/cpu/core.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/cpu/gcpukernel.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/cpu/imgproc.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/cpu/stereo.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/cpu/video.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/fluid/core.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/fluid/gfluidbuffer.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/fluid/gfluidkernel.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/fluid/imgproc.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/garg.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/garray.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/gasync_context.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/gcall.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/gcommon.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/gcompiled.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/gcompiled_async.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/gcompoundkernel.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/gcomputation.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/gcomputation_async.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/gframe.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/gkernel.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/gmat.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/gmetaarg.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/gopaque.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/gproto.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/gpu/core.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/gpu/ggpukernel.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/gpu/imgproc.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/gscalar.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/gstreaming.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/gtransform.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/gtype_traits.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/gtyped.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/imgproc.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/infer.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/infer/bindings_ie.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/infer/ie.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/infer/onnx.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/infer/parsers.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/media.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/ocl/core.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/ocl/goclkernel.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/ocl/imgproc.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/opencv_includes.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/operators.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/own/assert.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/own/convert.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/own/cvdefs.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/own/exports.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/own/mat.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/own/saturate.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/own/scalar.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/own/types.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/plaidml/core.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/plaidml/gplaidmlkernel.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/plaidml/plaidml.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/python/python.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/render.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/render/render.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/render/render_types.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/rmat.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/s11n.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/s11n/base.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/stereo.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/streaming/cap.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/streaming/desync.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/streaming/format.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/streaming/meta.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/streaming/source.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/streaming/sync.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/util/any.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/util/compiler_hints.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/util/copy_through_move.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/util/optional.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/util/throw.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/util/type_traits.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/util/util.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/util/variant.hpp
+-- Up-to-date: /usr/local/include/opencv4/opencv2/gapi/video.hpp
+-- Up-to-date: /usr/local/lib/python3.8/dist-packages/cv2/__init__.py
+-- Up-to-date: /usr/local/lib/python3.8/dist-packages/cv2/load_config_py2.py
+-- Up-to-date: /usr/local/lib/python3.8/dist-packages/cv2/load_config_py3.py
+-- Up-to-date: /usr/local/lib/python3.8/dist-packages/cv2/_extra_py_code/__init__.py
+-- Installing: /usr/local/lib/python3.8/dist-packages/cv2/config.py
+-- Installing: /usr/local/lib/python3.8/dist-packages/cv2/python-3.8/cv2.cpython-38-x86_64-linux-gnu.so
+-- Set runtime path of "/usr/local/lib/python3.8/dist-packages/cv2/python-3.8/cv2.cpython-38-x86_64-linux-gnu.so" to "/usr/local/lib"
+-- Installing: /usr/local/lib/python3.8/dist-packages/cv2/config-3.8.py
+-- Up-to-date: /usr/local/lib/python3.8/dist-packages/cv2/_extra_py_code/gapi/__init__.py
+-- Up-to-date: /usr/local/share/opencv4/haarcascades/haarcascade_eye.xml
+-- Up-to-date: /usr/local/share/opencv4/haarcascades/haarcascade_eye_tree_eyeglasses.xml
+-- Up-to-date: /usr/local/share/opencv4/haarcascades/haarcascade_frontalcatface.xml
+-- Up-to-date: /usr/local/share/opencv4/haarcascades/haarcascade_frontalcatface_extended.xml
+-- Up-to-date: /usr/local/share/opencv4/haarcascades/haarcascade_frontalface_alt.xml
+-- Up-to-date: /usr/local/share/opencv4/haarcascades/haarcascade_frontalface_alt2.xml
+-- Up-to-date: /usr/local/share/opencv4/haarcascades/haarcascade_frontalface_alt_tree.xml
+-- Up-to-date: /usr/local/share/opencv4/haarcascades/haarcascade_frontalface_default.xml
+-- Up-to-date: /usr/local/share/opencv4/haarcascades/haarcascade_fullbody.xml
+-- Up-to-date: /usr/local/share/opencv4/haarcascades/haarcascade_lefteye_2splits.xml
+-- Up-to-date: /usr/local/share/opencv4/haarcascades/haarcascade_licence_plate_rus_16stages.xml
+-- Up-to-date: /usr/local/share/opencv4/haarcascades/haarcascade_lowerbody.xml
+-- Up-to-date: /usr/local/share/opencv4/haarcascades/haarcascade_profileface.xml
+-- Up-to-date: /usr/local/share/opencv4/haarcascades/haarcascade_righteye_2splits.xml
+-- Up-to-date: /usr/local/share/opencv4/haarcascades/haarcascade_russian_plate_number.xml
+-- Up-to-date: /usr/local/share/opencv4/haarcascades/haarcascade_smile.xml
+-- Up-to-date: /usr/local/share/opencv4/haarcascades/haarcascade_upperbody.xml
+-- Up-to-date: /usr/local/share/opencv4/lbpcascades/lbpcascade_frontalcatface.xml
+-- Up-to-date: /usr/local/share/opencv4/lbpcascades/lbpcascade_frontalface.xml
+-- Up-to-date: /usr/local/share/opencv4/lbpcascades/lbpcascade_frontalface_improved.xml
+-- Up-to-date: /usr/local/share/opencv4/lbpcascades/lbpcascade_profileface.xml
+-- Up-to-date: /usr/local/share/opencv4/lbpcascades/lbpcascade_silverware.xml
