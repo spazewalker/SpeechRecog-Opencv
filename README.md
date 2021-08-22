@@ -32,5 +32,8 @@ The model is read by opencv dnn module. Which is then forwarded using the matrix
 #### Post-processing
 The model gives the "probabilities" of each for each window of the given audio. We need to produce a transcript of the given audio. This is done by applying a CTC-decoding algorithm on the output in `Decoder` class.
 
+## Future work
+The goals included an OpenCV sample for speech-recognition using AudioIO module and a pre-trained onnx model. The development of AudioIO module is delayed, due to which we couldn't include that in our implementation. Currently, the code uses a module called `sound_file` to read audio files. In he future, we'll need to use AudioIO module instead. Another concern is that, upon comparision of the time taken to forward the model in OpenCV and with other backends(onnxruntime), OpenCV is takes a lot of time for inference on CPU. This can also be looked into.
+
 ## What does this repo contain?
 This repository contains the Jupyter notebooks that were used to experiment with the code along with some scripts to make life easier. The `build.sh` script is used to build opencv from source on linux in debug config with single command `sudo sh build.sh`. `transcript.txt` contains the transcript of the audio `audio.flac` generated using OpenCV sample.
