@@ -2,7 +2,7 @@
 
 ## Overview
 Mentor : Liubov Batanina @l-bat \
-Proposal for the project : \
+Proposal for the project : [https://summerofcode.withgoogle.com/projects/#5148521881141248](https://summerofcode.withgoogle.com/projects/5148521881141248)\
 Pull Request : [https://github.com/opencv/opencv/pull/20291](https://github.com/opencv/opencv/pull/20291)
 
 OpenCV is used extensively in computer vision, tackling almost all major computer vision problems. Many Modern CV applications require working with videos, which are essentially images(frames) stacked on top of each other. Potential applications can also include working with audio along with video frames. OpenCV currently doesn’t provide support for such applications out of the box. The goal of this project is to add speech recognition samples, to be used with the OpenCV DNN module, to provide out of the box support speech recognision applications.
